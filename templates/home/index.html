@@ -1,0 +1,252 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home | MovieMatrix </title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body class="bg-black flex flex-col space-y-2 selection:bg-fuchsia-800 font-sans text-white">
+    <!--the nav bar-->
+    <div class="bg-gradient-to-r from bg-slate-700 to bg-slate-900 shadow py-2 fixed top-0 z-50 w-full">
+        <nav class="max-w-6xl mx-auto flex justify-between px-2 ">
+            <div class="flex items-center space-x-4 text-center">
+                <!--logo-->
+                <div>
+                    <a href="{% url 'home' %}"><h2 class="text-fuchsia-500 font-medium font-bold bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-500 to-fuchsia-700 text-2xl">
+                        MovieMatrix</h2></a>
+                </div>
+                <!--nav links-->
+                <div class="items-center">
+                    <ul class="flex space-x-1 mt-1">
+                        <li><a href="{% url 'home' %}" class="px-2 py-1 text-red-50 font-bold rounded-2xl border-transparent transition-all duration 300 ease-in-out hover:bg-slate-800
+                        cursor-pointer ">Home</a></li>
+                        <li><a href="{% url 'movie' %}" class="px-2 py-1 text-red-50 border-2 rounded-2xl border-transparent transition-all duration 300 ease-in-out hover:bg-slate-800
+                        cursor-pointer ">Movies</a></li>
+                        <li><a href="{% url 'about' %}" class="px-2 py-1 text-red-50 border-2 rounded-2xl border-transparent transition-all duration 300 ease-in-out hover:bg-slate-800
+                        cursor-pointer max-sm:hidden ">About us</a></li>
+                        <li><a href="{% url 'contact' %}" class="px-2 py-1 text-red-50 border-2 rounded-2xl border-transparent transition-all duration 300 ease-in-out hover:bg-slate-800
+                        cursor-pointer max-sm:hidden ">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="space-x-2 max-md:hidden text-red-100 mt-1">
+                <a href="#" class="px-2 py-1 text-red-50 border-2 rounded-2xl border-transparent transition-all duration 300 ease-in-out hover:bg-slate-800 ">Log in</a></li>
+                <button class="bg-fuchsia-700 text-red-50 rounded-lg px-3 py-1 cursor-pointer transform transition font-semibold hover:bg-fuchsia-800 hover:-translate-x-1 ">Sign Up</button>
+            </div>
+        </nav>
+    </div>
+
+    <!--the hero section-->
+    <section class="relative w-full h-fit overflow-hidden bg-black mt-12 py-1">
+        <!--the background image-->
+        <div class="absolute inset-0 bg-cover bg-center opacity-50 max-sm:hidden"
+            style="background-image: url('{% static 'home/images/bg-image.png' %}');">
+        </div>
+        <!--the mist/blur covering it-->
+        <div class="absolute inset-0 bg-gradient-to-r from-stone-900 via-stone-900/80 to-transparent"></div>
+
+        <div class="relative z-10 flex items-center h-1/5 p-6 gap-10 max-sm:flex-col max-sm:gap-4">
+            <div>
+                <img src="{% static 'home/images/bg-image-mobile.png' %}" class="h-[300px] rounded-xl shadow-2xl transition hover:-translate-y-2 max-sm:h-[300px]">
+            </div>
+
+            <div class="flex flex-col">
+                <div class="max-w-2xl text-white">
+                    <h1 class="text-4xl font-bold max-sm:text-2xl ">Marty Supreme <span class="text-white/40 font-thin mt-1 text-sm ">(2025)</span></h1>
+                    <ul class=" marker:text-sky-400 text-xs font-bold p-1 text-gray-300 flex space-x-1 ">
+                        <li class="border border-gray-600 font-thin px-1">R</li>
+                        <li>25/12/2025(US)</li>
+                        <li>2h30m</li>
+                    </ul>
+
+                    <ul class="flex text-fuchsia-700 space-x-3 text-center py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8 border-transparent bg-slate-900 rounded-full px-2 transition-all transform duration-300 ease-in hover:bg-fuchsia-700 hover:text-slate-900 hover:-translate-y-1 cursor-pointer">
+                        <path fill-rule="evenodd" d="M2.625 6.75a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875 0A.75.75 0 0 1 8.25 6h12a.75.75 0 0 1 0 1.5h-12a.75.75 0 0 1-.75-.75ZM2.625 12a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0ZM7.5 12a.75.75 0 0 1 .75-.75h12a.75.75 0 0 1 0 1.5h-12A.75.75 0 0 1 7.5 12Zm-4.875 5.25a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Zm4.875 0a.75.75 0 0 1 .75-.75h12a.75.75 0 0 1 0 1.5h-12a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8 border-transparent bg-slate-900 rounded-full px-2 transition-all duration-300 ease-in hover:bg-fuchsia-700 hover:text-slate-900 hover:-translate-y-1 cursor-pointer">
+                        <path fill-rule="evenodd" d="M6.32 2.577a49.255 49.255 0 0 1 11.36 0c1.497.174 2.57 1.46 2.57 2.93V21a.75.75 0 0 1-1.085.67L12 18.089l-7.165 3.583A.75.75 0 0 1 3.75 21V5.507c0-1.47 1.073-2.756 2.57-2.93Z" clip-rule="evenodd" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8 border-transparent bg-slate-900 rounded-full px-2 transition-all duration-300 ease-in hover:bg-fuchsia-700 hover:text-slate-900 hover:-translate-y-1 cursor-pointer">
+                        <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
+                        </svg>
+                    </ul>
+
+                    <p class="mt-2 text-gray-300/70">Dream big.</p>
+                    <h3 class="text-gray-300 font-bold text-lg mt-3">Overview</h3>
+                    <p class="mt-2 text-sm leading-relaxed">Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.</p>
+                    <div class="flex space-x-5 py-4 max-sm:hidden">
+                        <div>
+                            <h4 class="text/white font-bold">Josh Safdie</h4>
+                            <p class="text-white/40 text-xs">Director, writer</p>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold">Ronald Bronstein</h4>
+                            <p class="text-white/40 text-xs">Writer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 gap-3 max-sm:mt-5 max-sm:text-bs ">
+                    <button class="bg-red-100 rounded-xl text-gray-800 text-xl font-semibold p-2 transition-all duration-300 ease-in hover:-translate-y-2 hover:bg-fuchsia-800 hover:text-white cursor-pointer px-3 py-1 mr-5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-fuchsia-500 inline m1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+                    </svg>Play</button>
+                    <button class="bg-red-100 rounded-xl text-gray-700 text-xl font-semibold p-2 transition-all duration-300 ease-in hover:-translate-y-2 hover:bg-fuchsia-800 hover:text-white cursor-pointer px-3 py-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-fuchsia-500 inline m1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" /></svg>More details</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--top  of the week movies >-->
+    <h1 class="text-white font-bold text-2xl px-5 py-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-fuchsia-500 inline cursor-pointer">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+        </svg> Top 3 of the Week <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline text-fuchsia-500 mb-1">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+    </h1>
+    <section class="flex flex-col md:flex-row">
+        <section class="flex flex-1 rounded-xl bg-gray-950 m-0.5 items-center py-1 pl-2 pr-3 md:m-2">
+            <!--the image-->
+            <div class="h-56 w-40 rounded-xl transition hover:-translate-y-2" >
+                <a href="#"><img src="{% static 'home/images/top-week-1.png' %}" alt=""  class="w-full h-full p-5 md:p-2"></a>
+            </div>
+            <div class="md:shrink-30">
+                <span class="bg-fuchsia-800 text-white font-bold px-2 rounded-xl text-xs">#1</span>
+                <h6 class="font-bold text-white mt-1 text-xl"><a href="#">The Rip</a></h6>
+                <p class="font-thin text-white/50 py-2 text-xs"> 2026 1h53m R</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline text-yellow-400 text-xs mb-2">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                </svg>
+                <p class="text-white/50 inline">6.8(79k)</p>
+                <p class="text-fuchsia-500 font-semibold cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-fuchsia-500 inline h-5 mb-1">
+                <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+                </svg>Recently Added</p>
+
+                <p class="max-sm:hidden text-white/50 p-2 text-xs">A group of Miami cops discovers a stash of millions in cash, leading to distrust as outsiders learn about the huge seizure, making them question</p>
+            </div>
+        </section>
+
+
+        <section class="flex flex-1 rounded-xl bg-gray-950 m-0.5 items-center py-1 pl-2 pr-3 md:m-2">
+            <!--the image-->
+            <div class="h-56 w-40 rounded-xl transition hover:-translate-y-2" >
+                <a href="#"><img src="{% static 'home/images/top-week-2.png' %}" alt=""  class="w-full h-full p-5 md:p-2"></a>
+            </div>
+            <div class="md:shrink-30">
+                <span class="bg-fuchsia-800 text-white font-bold mt-5 px-2 rounded-xl text-xs">#2</span>
+                <h6 class="font-bold text-white mt-1 text-xl"><a href="#">Avatar: Fire and Ash</a></h6>
+                <p class="font-thin text-white/50 py-2 text-xs"> 2025 3h17m PG</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline text-yellow-400 text-xs mb-2">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                </svg>
+                <p class="text-white/50 inline">7.4(122k)</p>
+                <p class="text-fuchsia-500 font-semibold cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-fuchsia-500 inline h-5 mb-1">
+                <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+                </svg>Recently Added</p>
+                <p class="max-sm:hidden text-white/50 p-2 text-xs">Jake and Neytiri's encounter a new, aggressive Na'vi tribe, the Ash People, who are led by the fiery Varang, as the conflict on Pandora escalates.</p>
+            </div>
+        </section>
+
+
+        <section class="flex flex-1 rounded-xl bg-gray-950 m-0.5 items-center py-1 pl-2 pr-3 md:m-2">
+            <!--the image-->
+            <div class="h-56 w-40 rounded-xl transition hover:-translate-y-2" >
+                <a href="#"><img src="{% static 'home/images/top-week-3.png' %}" alt=""  class="w-full h-full p-5 md:p-2"></a>
+            </div>
+            <div class="md:shrink-30 ">
+                <span class="bg-fuchsia-800 text-white font-bold mt-5 px-2 rounded-xl text-xs">#3</span>
+                <h6 class="font-bold text-white mt-1 text-xl"><a href="#">Zootopia 2</a></h6>
+                <p class="font-thin text-white/50 py-2 text-xs"> 2025 1h48m PG</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 inline text-yellow-400 text-xs mb-2">
+                <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                </svg>
+                <p class="text-white/50 inline">7.5(69k)</p>
+                <p class="text-fuchsia-500 font-semibold cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-fuchsia-500 inline h-5 mb-1">
+                <path fill-rule="evenodd" d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd" />
+                </svg>Recently Added</p>
+                <p class="max-sm:hidden text-white/50 p-2 text-xs">Brave rabbit cop Judy Hopps and her friend, the fox Nick Wilde, team up again to crack a new case, the most perilous and intricate of their careers.</p>
+            </div>
+        </section>
+
+    </section>
+
+    <h1 class="text-white font-bold text-2xl px-5 py-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-fuchsia-500 inline cursor-pointer">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+        </svg> Comedies <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline text-fuchsia-500 mb-1">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+    </h1>
+    <div class="flex space-x-3 ml-5">
+        <a href="movie.html" target="_blank"><img src="{% static 'home/images/comedies-1.png' %}" alt="" class="h-64 max-sm:h-48 w-48 rounded-xl transition hover:-translate-y-2"></a>
+        <a href="#"><img src="{% static 'home/images/comedies-2.png' %}" alt="" class="h-64 max-sm:h-48 w-48 rounded-xl transition hover:-translate-y-2"></a>
+        <a href="#"><img src="{% static 'home/images/comedies-3.png' %}" alt="" class="h-64 max-sm:h-48 w-48 rounded-xl transition hover:-translate-y-2"></a>
+        <div class="max-sm:hidden flex space-x-3">
+            <a href="#"><img src="{% static 'home/images/comedies-4.png' %}" alt="" class="h-64 w-48 rounded-xl transition hover:-translate-y-2"></a>
+            <a href="#"><img src="{% static 'home/images/comedies-5.png' %}" alt="" class="h-64 w-48 rounded-xl transition hover:-translate-y-2"></a>
+            <a href="#"><img src="{% static 'home/images/comedies-6.png' %}" alt="" class="h-64 w-48 rounded-xl transition hover:-translate-y-2"></a>
+        </div>
+    </div>
+
+    <h1 class="text-white font-bold text-2xl px-5 py-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-fuchsia-500 inline cursor-pointer">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+        </svg> Action <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline text-fuchsia-500 mb-1">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+    </h1>
+    <div class="flex space-x-3 ml-5 ">
+        <a href="#"><img src="{% static 'home/images/action-1.png' %}" alt="" class="h-64 max-sm:h-48 w-48 rounded-xl transition hover:-translate-y-2"></a>
+        <a href="#"><img src="{% static 'home/images/action-2.png' %}" alt="" class="h-64 max-sm:h-48 w-48 rounded-xl transition hover:-translate-y-2"></a>
+        <a href="#"><img src="{% static 'home/images/action-3.png' %}" alt="" class="h-64 max-sm:h-48 w-48 rounded-xl transition hover:-translate-y-2"></a>
+        <div class="max-sm:hidden flex space-x-3">
+            <a href="#"><img src="{% static 'home/images/action-4.png' %}" alt="" class="h-64 w-48 rounded-xl transition hover:-translate-y-2"></a>
+            <a href="#"><img src="{% static 'home/images/action-5.png' %}" alt="" class="h-64 w-48 rounded-xl transition hover:-translate-y-2"></a>
+            <a href="#"><img src="{% static 'home/images/action-6.png' %}" alt="" class="h-64 w-48 rounded-xl transition hover:-translate-y-2"></a>
+        </div>
+    </div>
+
+    <h1 class="text-white font-bold text-2xl px-5 py-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-fuchsia-500 inline cursor-pointer">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+        </svg> Classics <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 inline text-fuchsia-500 mb-1">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" /></svg>
+    </h1>
+    <div class="flex space-x-5 ml-5">
+        <a href="#"><img src="{% static 'home/images/classics-1.png' %}" alt="" class="h-64 max-sm:h-48 w-48 rounded-xl transition hover:-translate-y-2"></a>
+        <a href="#"><img src="{% static 'home/images/classics-2.png' %}" alt="" class="h-64 max-sm:h-48 w-48 rounded-xl transition hover:-translate-y-2"></a>
+        <a href="#"><img src="{% static 'home/images/classics-3.png' %}" alt="" class="h-64 max-sm:h-48 w-48 rounded-xl transition hover:-translate-y-2"></a>
+        <div class="max-sm:hidden flex space-x-3">
+            <a href="#"><img src="{% static 'home/images/classics-4.png' %}" alt="" class="h-64 w-48 rounded-xl transition hover:-translate-y-2"></a>
+            <a href="#"><img src="{% static 'home/images/classics-5.png' %}" alt="" class="h-64 w-48 rounded-xl transition hover:-translate-y-2"></a>
+            <a href="#"><img src="{% static 'home/images/classics-6.png' %}" alt="" class="h-64 w-48 rounded-xl transition hover:-translate-y-2"></a>
+        </div>
+    </div>
+
+    <!--socials-->
+    <footer class="py-10 text-center border-t border-gray-900 flex flex-col">
+        <button class="rounded-3xl px-5 py-2 cursor-pointer bg-gradient-to-r from-rose-600 via-fuchsia-600 to-purple-600 hover:brightness-110 m-auto font-semibold transition hover:-translate-y-1">Sign in for more access </button>
+
+        <div class="flex gap-10 p-4 mx-auto">
+            <div class="flex p-5 border border-gray-600 flex-col rounded-xl ">
+                <h2 class="text-white font-bold text-center">Follow MovieMatrix on Social Media</h2>
+                <div class="flex gap-10 mx-auto mt-8">
+                    <a href="#"><i class="bi bi-instagram text-rose-500 hover:text-rose-700 py-1"></i></a>
+                    <a href="#"><i class="bi bi-facebook text-fuchsia-500 hover:text-fuchsia-700 py-1"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x text-purple-500 hover:text-purple-700 py-1"></i></a>
+                </div>
+            </div>
+
+            <div class="flex p-5 border border-gray-600 flex-col rounded-xl ">
+                <h2 class="text-white font-bold text-center">Get the MovieMatrix app</h2>
+                <div class="flex flex-col md:flex-row gap-5 m-auto mt-3">
+                    <p class="text-gray-700 font-semibold ">For Android and IOS</p>
+                    <a href="#"><img src="{% static 'home/images/footer-1.png' %}" alt="qr code" class="h-24 w-28 rounded-lg"></a>
+                </div>
+            </div>
+        </div>
+        <p class="text-gray-700 text-xs font-semibold text-center mt-3">&copy;MovieMatrix 2026</p>
+    </footer>
+</body>
+</html>
