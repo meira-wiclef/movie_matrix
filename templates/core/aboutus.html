@@ -1,0 +1,71 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block Title %} About {% endblock %}
+{% block body %} class="bg-gray-950 text-white font-sans selection:bg-fuchsia-800" {% endblock %}
+{% block content %}
+{% block about %} font-bold {% endblock %}
+
+
+
+    <header class="py-16 px-6 mt-10 border-b border-fuchsia-900/30 bg-gradient-to-br from-purple-900/20 via-gray-950 to-rose-900/20">
+        <div class="max-w-3xl mx-auto text-center">
+            <h1 class="text-6xl font-black r mb-4 bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-500 via-purple-400 to-rose-500">
+                ABOUT US
+            </h1>
+            <p class="text-lg text-rose-200 font-medium">
+                Cinema without barriers. Entertainment without invoices.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-6 py-12 flex flex-col gap-16">
+
+        <section class="flex flex-col gap-4">
+            <div class="flex items-center gap-3">
+                <div class="h-1 w-12 bg-fuchsia-600"></div>
+                <h2 class="text-2xl font-bold uppercase text-fuchsia-500">The Mission</h2>
+            </div>
+            <p class="text-gray-300 leading-normal">
+                We believe stories are a human right, not a luxury. Our mission is to dismantle the paywalls that keep global audiences from experiencing the magic of film. By leveraging open-source technology and community-driven curation, we ensure that premium entertainment remains 100% free, forever.
+            </p>
+        </section>
+
+        <section class="flex flex-col gap-6">
+            <h2 class="text-2xl font-bold uppercase text-purple-500 flex items-center gap-3">
+                <span class="h-1 w-12 bg-purple-600"></span> What We Do
+            </h2>
+
+            <div class="flex flex-col gap-4">
+                <div class="bg-gray-900/80 border-l-4 border-rose-600 p-5 rounded-r-lg cursor-pointer transition hover:-translate-x-1">
+                    <h3 class="font-bold text-rose-400 text-lg">Curated Libraries</h3>
+                    <p class="text-gray-400 text-sm">We don't just host files; we curate experiences. Our team hand-picks indie gems, cult classics, and underground documentaries.</p>
+                </div>
+
+                <div class="bg-gray-900/80 border-l-4 border-fuchsia-600 p-5 rounded-r-lg cursor-pointer transition hover:-translate-x-1">
+                    <h3 class="font-bold text-fuchsia-400 text-lg">Zero-Cost Streaming</h3>
+                    <p class="text-gray-400 text-sm">We provide high-definition playback with no subscription fees, no "premium" tiers, and no hidden costs.</p>
+                </div>
+
+                <div class="bg-gray-900/80 border-l-4 border-purple-600 p-5 rounded-r-lg cursor-pointer transition hover:-translate-x-1">
+                    <h3 class="font-bold text-purple-400 text-lg">Universal Compatibility</h3>
+                    <p class="text-gray-400 text-sm">Our player is optimized for everything from high-end PCs to low-bandwidth mobile devices in developing regions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col gap-4 p-8 rounded-3xl bg-gradient-to-tr from-fuchsia-900/40 to-rose-900/40 border border-fuchsia-500/30 cursor-pointer">
+            <h2 class="text-2xl font-bold uppercase tracking-widest text-white">How We Do It</h2>
+            <p class="text-rose-100 text-sm leading-snug">
+                It's not magic; it's efficiency. We utilize peer-to-peer distribution networks and lightweight ad-supported models that respect user privacy. By partnering with independent filmmakers who want their voices heard, we create a sustainable ecosystem where creators get exposure and you get to watch for free.
+            </p>
+            <div class="mt-4 flex flex-wrap gap-3 md:">
+                <span class="px-3 py-1 rounded-full bg-rose-600 text-[10px] font-bold uppercase">No Credit Card</span>
+                <span class="px-3 py-1 rounded-full bg-purple-600 text-[10px] font-bold uppercase">Privacy First</span>
+                <span class="px-3 py-1 rounded-full bg-fuchsia-600 text-[10px] font-bold uppercase">Open Source</span>
+            </div>
+        </section>
+
+    </main>
+
+{% endblock %}
