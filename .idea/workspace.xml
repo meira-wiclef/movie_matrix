@@ -1,68 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07bf64d3-6ef3-4cbe-afff-c9a82a487f07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/MovieMatrix.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moviematrix/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moviematrix/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moviematrix/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moviematrix/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/moviematrix/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/action-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/action-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/action-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/action-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/action-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/action-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/banner-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/banner-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/banner-ls.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/bg-image-mobile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/bg-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/bg-movie-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/classics-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/classics-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/classics-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/classics-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/classics-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/classics-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/comedies-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/comedies-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/comedies-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/comedies-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/comedies-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/comedies-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/comedies-7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/emma.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/ezra.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/footer-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/kate.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/logan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/movie-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/movie-2.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/nina.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/paul.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/top-week-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/top-week-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/home/images/top-week-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/aboutus.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/contactus.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/home/movie.html" afterDir="false" />
+    <list default="true" id="07bf64d3-6ef3-4cbe-afff-c9a82a487f07" name="Changes" comment="Extending the base and creating partials.">
+      <change afterPath="$PROJECT_DIR$/authentication/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/auth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/authentication/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moviematrix/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/moviematrix/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moviematrix/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/moviematrix/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,18 +27,24 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3KXfiyrCfn4FzWSWIVbO7JYD4pK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -101,11 +59,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "django.template.preview.state": "SHOW_EDITOR",
     "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "last_opened_file_path": "C:/Users/HP/PycharmProjects/MovieMatrix",
+    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -153,11 +113,45 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1791708965814</updated>
-      <workItem from="1791708966702" duration="11499000" />
+      <workItem from="1791708966702" duration="13779000" />
+      <workItem from="1791828968225" duration="11928000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1791802205533</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1791802205536</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Extending the base and creating partials.">
+      <option name="closed" value="true" />
+      <created>1791887907069</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1791887907069</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Extending the base and creating partials." />
+    <option name="LAST_COMMIT_MESSAGE" value="Extending the base and creating partials." />
   </component>
 </project>
